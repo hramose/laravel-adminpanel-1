@@ -3,11 +3,8 @@
 ## Introduction
 * This is a laravel Admin Panel, based on [Rappasoft Laravel Boilerplate](https://github.com/rappasoft/laravel-5-boilerplate/releases/tag/4.5.7), with enhancemenets and many modules pre-made, just for you.
 
-
 ## Features
 For Laravel 5 Boilerplate Features : [Features](https://github.com/rappasoft/laravel-5-boilerplate/wiki#features)
-
-
 
 Clone the repository
 
@@ -29,9 +26,6 @@ If you have windows system, you can run Artisan Command for database setup, conn
 Generate a new application key
 
     php artisan key:generate
-
-Generate a new JWT secret key (If you want to use API)
-    php artisan jwt:secret
 
 Generate a new JWT authentication secret key
 
@@ -65,8 +59,6 @@ Start the local development server
 
     php artisan serve
 
-
-
 You can now access the server at http://localhost:8000
 
 **Command list**
@@ -79,8 +71,13 @@ You can now access the server at http://localhost:8000
     npm run development
     php artisan storage:link
     php artisan key:generate
-    php artisan jwt:secret
     php artisan vendor:publish --tag=lfm_public
+    php artisan migrate
+    php artisan passport:install
+
+## Please note
+
+- To run test cases, add SQLite support to your php
 
 ## Logging In
 
